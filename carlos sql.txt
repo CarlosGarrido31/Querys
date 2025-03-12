@@ -7,18 +7,6 @@ DESCRIBE PRUEBA2;
 ALTER TABLE PRUEBA2
 CHANGE COLUMN NOMBRE NOMBRE VARCHAR (30) NOT NULL;
 
--- ALTER TABLE >> DROP COLUMN 
-
-ALTER TABLE PRUEBA2
-DROP COLUMN APELLIDO;
-
-
--------------------------------------------------------------------
-
--- DROP TABLE 
-DROP TABLE PRUEBA2;
-SHOW TABLES;
-
 -------------------------------------------------------------------
 INSERT INTO PRUEBA  (ID, NOMBRE, F_INGRESO, ACTIVO)
 VALUES (1,'PEPE', '2025-01-01','S');
@@ -99,15 +87,7 @@ BEGIN;
 	WHERE MARCA = 'LEVIS';
 	SELECT * FROM PRODUCTOS WHERE MARCA='LEVIS';
 ROLLBACK;
-
-/*
-
-SELECT: Permite acceder a los datos de una base de datos
-INSERT: Permite introducir filas de datos dentro de una tabla existente
-DELETE: Permite eliminar filas de datos dentro de una tabla existente
-UPDATE: Permite modificar datos dentro de las filas de una tabla
-
-*/
+----------------------------------------------------------------------------------------------
 SELECT * FROM CLIENTES WHERE ID_CLIENTE=20;
 
 BEGIN;
